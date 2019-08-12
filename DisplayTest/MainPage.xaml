@@ -1,0 +1,49 @@
+﻿<Page
+    x:Class="DisplayTest.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:DisplayTest"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    Height="600"
+    Width="800">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Button x:Name="BtnPowerOff"
+                Grid.Row="0"
+                Grid.Column="5"
+                Margin="4,8,4,8"
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Stretch"
+                Content="Off"/>
+        <Button x:Name="BtnPowerOn"
+                Grid.Row="0"
+                Grid.Column="6"
+                Margin="4,8,8,8"
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Stretch"
+                Content="On"/>
+    </Grid>
+</Page>
