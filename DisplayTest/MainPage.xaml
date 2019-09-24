@@ -37,13 +37,15 @@
                 Margin="4,8,4,8"
                 HorizontalAlignment="Stretch"
                 VerticalAlignment="Stretch"
-                Content="Off"/>
+                Content="Off"
+                Click="BtnPowerOff_OnClick"/>
         <Button x:Name="BtnPowerOn"
                 Grid.Row="0"
                 Grid.Column="6"
                 Margin="4,8,8,8"
                 HorizontalAlignment="Stretch"
                 VerticalAlignment="Stretch"
-                Content="On"/>
+                Content="On"
+                Click="BtnPowerOn_OnClick"/>
     </Grid>
 </Page>
