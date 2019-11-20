@@ -29,7 +29,21 @@ using Synexsis to control the displays of two different manufacturers.
   5. Enable Quick start under TV Power menu
   
 ### Configuring the Ethernet to Serial adapter for use with Samsung ExLink
-  
+  1. Connect a network cable between your computer and the USR-IOT adapter
+  2. Set your network card based on the IP address found on the USR-IOT adapter. (Example: Adapter is often set to 192.168.0.1, computer network card set to 192.168.0.10)
+  3. Open a browser and connect to the adapter 
+  4. Click the Local IP Config button on the left navigation bar
+  5. Set a static IP address according to your preference
+  6. Select Serial port and set:
+     * Baud rate: 9600
+     * Data size: 8
+     * Parity: None
+     * Stop bits: 1
+     * Local Port Number: 23
+     * Remote Port Number: n/a
+     * Work Mode: TCP Server
+     * Leave other items as is
+   7.
    
 #### NOTE THIS TEST PLATFORM REQUIRES THE USE OF AN ENKADIA TEST LICENSE. TO REQUEST A LICENSE PLEASE SEE [enkadia.com](https://www.enkadia.com)
 ---
@@ -53,15 +67,21 @@ This sample appsettings file demonstrates the configuration information needed t
 #### Sample appsettings.json
 ```json
 {
-    "RoboshotCamera": {
-		"IPAddress": "192.168.1.200",
+    	"FrontDisplay": {
+		"IPAddress": "192.168.1.82",
 		"Port": 23,
-		"Username": "admin",
-                "Password": "password"
+	},
+	"Rear1": {
+		"IPAddress": "192.168.1.81",
+		"Port":10002,
+	},
+	"Rear2": {
+		"IPAddress": "192.168.1.81",
+		"Port":10002,
 	},
 	"License": {
 		"OfflineActivation": "true",
-		"LicenseFileName": "MyLicense.skm"
+		"LicenseFileName": "SynexsisBetaKey.skm"
 	}
 }
 ```
