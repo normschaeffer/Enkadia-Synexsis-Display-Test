@@ -33,7 +33,7 @@ using Synexsis to control the displays of two different manufacturers.
   2. Set your network card based on the IP address found on the USR-IOT adapter. (Example: Adapter is often set to 192.168.0.1, computer network card set to 192.168.0.10)
   3. Open a browser and connect to the adapter 
   4. Click the Local IP Config button on the left navigation bar
-  5. Set a static IP address according to your preference
+  5. Set a static IP address on your control network
   6. Select Serial port and set:
      * Baud rate: 9600
      * Data size: 8
@@ -43,7 +43,12 @@ using Synexsis to control the displays of two different manufacturers.
      * Remote Port Number: n/a
      * Work Mode: TCP Server
      * Leave other items as is
-   7.
+   7. Select Misc Config
+     * change if desired
+     * **Note username and password are limited to five characters
+   8. Select Reboot and restart the adapter.
+   9. Reconfigure the network card on your computer to your control network and plug the serial adapter into your control network.
+  10. Connect the DB9 to 3.5mm cable into the Serial adapter and ExLink port of the display
    
 #### NOTE THIS TEST PLATFORM REQUIRES THE USE OF AN ENKADIA TEST LICENSE. TO REQUEST A LICENSE PLEASE SEE [enkadia.com](https://www.enkadia.com)
 ---
@@ -52,9 +57,9 @@ Synexsis builds your components by reading values from an `appsettings.json` fil
 
 ```text
 Place the appsettings.json file and license key in this folder.
-This is an example for a release version running on a Raspberry Pi:
+This is an example for a release version running on a laptop:
 
-   ApplicationName\bin\x86\Release\AppX
+   ApplicationName\bin\x86\Debug\AppX
 
 ```
 #### Troubleshooting
