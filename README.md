@@ -67,7 +67,7 @@ If the application fails to start, verify the license and appsettings.json files
 
 ---
 ### Creating the appsettings.json file
-This sample appsettings file demonstrates the configuration information needed to support a Vaddio Roboshot camera.
+This sample appsettings file demonstrates the configuration information needed to support the Samsung front display and two Sharp displays in the back of the room.
 
 #### Sample appsettings.json
 ```json
